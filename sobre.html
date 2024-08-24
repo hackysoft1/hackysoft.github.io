@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/tecnology.ico">
+    <title>Sobre - HackySoft</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0E2A47;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        body {
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        cursor: url('img/icons8-mouse-cursor-24.png'), auto; /* Define o cursor personalizado */
+    }
+
+        header {
+            background-color:#0e355e;
+            padding: 30px;
+            text-align: center;
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #ffffff;
+        }
+
+        .content {
+            padding: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #e43f5a;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #208ea4;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+
+        footer {
+            background-color: #0B1F36;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HackySoft</h1>
+</header>
+
+<div class="content">
+    <h2>Sobre Nós</h2>
+    <p>
+        A HackySoft é uma empresa especializada em segurança da informação, ethical hacking e segurança cibernética. 
+        Nosso objetivo é garantir que seus sistemas estejam protegidos contra ameaças e vulnerabilidades cibernéticas 
+        em constante evolução.
+    </p>
+    <p>
+        Com uma equipe de profissionais qualificados e apaixonados por tecnologia, oferecemos serviços de 
+        testes de penetração, análise de vulnerabilidades e consultoria em segurança digital. 
+        Nosso compromisso é identificar e mitigar riscos antes que eles possam ser explorados.
+    </p>
+    <p>
+        Trabalhamos lado a lado com nossos clientes para criar soluções personalizadas de acordo com as suas 
+        necessidades específicas, sempre com a ética e a segurança como nossos princípios fundamentais.
+    </p>
+    <p>
+         Nossa equipe de especialistas em segurança trabalha para proteger os sistemas e dados dos nossos clientes, garantindo que 
+         eles estejam seguros contra ameaças cibernéticas.
+         Se você precisa de soluções confiáveis e inovadoras, conte com a HackySoft.
+    </p>
+</div>
+
+<!-- Botão de Voltar ao Topo -->
+<button class="back-to-top" onclick="scrollToTop()">Voltar ao Início</button>
+
+<footer>
+    <p>&copy; 2024 HackySoft - Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    // Mostrar o botão quando a página for rolada para baixo
+    window.onscroll = function() {
+        var backToTopButton = document.querySelector(".back-to-top");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // Função para rolar até o topo
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+</script>
+
+</body>
+</html>
