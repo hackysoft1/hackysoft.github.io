@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma HackySoft - Hacking & Pentest Labs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #0f3460;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #e43f5a;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: #162447;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e43f5a;
+        }
+
+        .container {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #208ea4;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .lab-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .lab-item {
+            background-color: #162447;
+            padding: 20px;
+            border-radius: 10px;
+            width: calc(33.333% - 20px);
+            text-align: center;
+        }
+
+        .lab-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #e43f5a;
+        }
+
+        .lab-item p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .lab-item a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e43f5a;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .lab-item a:hover {
+            background-color: #ff6b81;
+        }
+
+        footer {
+            background-color: #0f3460;
+            text-align: center;
+            padding: 20px;
+            color: #ffffff;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .lab-item {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .lab-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HackySoft Labs</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Laboratórios</a>
+    <a href="#">Livros de Hacking</a>
+    <a href="#">Ferramentas</a>
+    <a href="#">Contato</a>
+</nav>
+
+<div class="container">
+    <!-- Laboratórios -->
+    <div class="section">
+        <h2>Laboratórios de Hacking & Pentest</h2>
+        <p>Explore nossos laboratórios interativos de hacking e testes de penetração. Cada laboratório foi criado para testar suas habilidades em diferentes cenários, desde exploração de vulnerabilidades até captura de bandeiras (CTF).</p>
+        <div class="lab-grid">
+            <div class="lab-item">
+                <h3>Lab 1: Web Pentest</h3>
+                <p>Realize testes de penetração em uma aplicação web vulnerável.</p>
+                <a href="#">Acessar</a>
+            </div>
+            <div class="lab-item">
+                <h3>Lab 2: Exploração de Servidores</h3>
+                <p>Explore vulnerabilidades em um servidor exposto e comprometa o sistema.</p>
+                <a href="#">Acessar</a>
+            </div>
+            <div class="lab-item">
+                <h3>Lab 3: Captura de Bandeira (CTF)</h3>
+                <p>Participe de um desafio de CTF, identifique e capture a bandeira.</p>
+                <a href="#">Acessar</a>
+            </div>
+            <div class="lab-item">
+                <h3>Lab 4: Ataques a Redes</h3>
+                <p>Simule ataques a redes Wi-Fi e comprometa a segurança da rede.</p>
+                <a href="#">Acessar</a>
+            </div>
+            <div class="lab-item">
+                <h3>Lab 5: Engenharia Reversa</h3>
+                <p>Desafie suas habilidades de engenharia reversa com binários protegidos.</p>
+                <a href="#">Acessar</a>
+            </div>
+            <div class="lab-item">
+                <h3>Lab 6: Exploração de Buffer Overflow</h3>
+                <p>Pratique a exploração de vulnerabilidades de Buffer Overflow em aplicativos.</p>
+                <a href="#">Acessar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Livros de Hacking -->
+    <div class="section">
+        <h2>Livros de Hacking</h2>
+        <p>Adquira conhecimento profundo com nossos livros recomendados sobre hacking e segurança da informação. Estes livros abordam desde conceitos básicos até técnicas avançadas.</p>
+        <div class="lab-grid">
+            <div class="lab-item">
+                <h3>Livro 1: Hacking: The Art of Exploitation</h3>
+                <p>Um dos livros mais populares para aprender hacking prático.</p>
+                <a href="#">Ver mais</a>
+            </div>
+            <div class="lab-item">
+                <h3>Livro 2: Metasploit: The Penetration Tester's Guide</h3>
+                <p>Guia completo para aprender a usar a framework Metasploit.</p>
+                <a href="#">Ver mais</a>
+            </div>
+            <div class="lab-item">
+                <h3>Livro 3: Web Application Hacker's Handbook</h3>
+                <p>Aprenda como comprometer a segurança de aplicações web.</p>
+                <a href="#">Ver mais</a>
+            </div>
+            <div class="lab-item">
+                <h3>Livro 4: Black Hat Python</h3>
+                <p>Desenvolva ferramentas de hacking com Python.</p>
+                <a href="#">Ver mais</a>
+            </div>
+            <div class="lab-item">
+                <h3>Livro 5: The Hacker Playbook 3</h3>
+                <p>Um guia passo a passo sobre testes de penetração ofensivos.</p>
+                <a href="#">Ver mais</a>
+            </div>
+            <div class="lab-item">
+                <h3>Livro 6: Practical Malware Analysis</h3>
+                <p>Analise e desmonte malwares complexos.</p>
+                <a href="#">Ver mais</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 HackySoft - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
