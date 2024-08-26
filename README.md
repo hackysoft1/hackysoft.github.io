@@ -31,5 +31,5 @@ Se tiver dúvidas ou quiser saber mais sobre nossos serviços, não hesite em no
 ## 🛠️ Como Contribuir
 Sinta-se à vontade para contribuir com melhorias no código ou sugerir novas funcionalidades. Basta abrir um Pull Request ou uma Issue com sua sugestão!
 
-##📄 Licença
+📄 Licença
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
